@@ -1,0 +1,62 @@
+{
+  "versions": {
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "pillow": "12.0.0",
+    "opencv": "4.11.0"
+  },
+  "dataset": "pass",
+  "geometry": "pass",
+  "covered_by_ten_points": 399,
+  "unsupported": [
+    "val/r_5.png"
+  ],
+  "near_poses": [
+    [
+      "test/r_51.png",
+      "test/r_151.png",
+      6.601214408874512e-06
+    ]
+  ],
+  "splits": {
+    "train": {
+      "pairs": 69,
+      "n": 8906,
+      "near": 7357,
+      "front": 7357,
+      "ctrl": 32,
+      "min_front": 14,
+      "median_pair_error": 0.23349519182751283,
+      "median_wrong_pose_error": 161.78676012417478
+    },
+    "val": {
+      "pairs": 72,
+      "n": 9372,
+      "near": 7810,
+      "front": 7810,
+      "ctrl": 35,
+      "min_front": 9,
+      "median_pair_error": 0.22288818865638035,
+      "median_wrong_pose_error": 147.07999827095944
+    },
+    "test": {
+      "pairs": 184,
+      "n": 30295,
+      "near": 25927,
+      "front": 25919,
+      "ctrl": 111,
+      "min_front": 54,
+      "median_pair_error": 0.16070274751273006,
+      "median_wrong_pose_error": 130.64131031685392
+    }
+  },
+  "covered_after_followup": 400,
+  "unsupported_after_followup": [],
+  "camera_maxima": {
+    "ortho": 1.2533568329586853e-06,
+    "origin_px": 5.52911060393179e-05,
+    "center_error": 1.3339103234157803e-15,
+    "ray_px": 1.971075837763094e-12,
+    "det_error": 3.334072812277711e-07
+  }
+}

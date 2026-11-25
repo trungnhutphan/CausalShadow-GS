@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "checked_sha256": 803,
+  "counts": {
+    "train": 100,
+    "val": 100,
+    "test": 200
+  },
+  "auxiliary": {
+    "depth": 200,
+    "normal": 200
+  },
+  "missing": 0,
+  "orphan_color": 0,
+  "duplicate_paths": 0
+}

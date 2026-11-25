@@ -1,0 +1,59 @@
+{
+  "run_id": "p00-p06_001",
+  "kind": "dataset_preparation",
+  "verified_at_utc": "2026-11-23T06:36:16Z",
+  "status": "ready_for_block_1_inspection",
+  "scope": {
+    "project": "CausalShadow-GS",
+    "input": "Multi-view RGB(A) images and camera-to-world poses",
+    "planned_reconstruction_method": "GraphDECO 3D Gaussian Splatting (Kerbl et al., 2023)",
+    "planned_output": "Optimized 3D Gaussian scene",
+    "training_started": false
+  },
+  "dataset": {
+    "name": "NeRF-Synthetic",
+    "scene": "lego",
+    "path_relative_to_project": "data/raw/nerf_synthetic/lego",
+    "source_repository": "https://github.com/bmild/nerf",
+    "source_script": "https://github.com/bmild/nerf/blob/master/download_example_data.sh",
+    "source_archive": "https://cseweb.ucsd.edu/~viscomp/projects/LF/papers/ECCV20/nerf/nerf_example_data.zip",
+    "archive_bytes": 370385516,
+    "archive_sha256": "ce4e94e031c099a19ef04cfb6c71f1e47225d97d365be610b476e379a386c25f",
+    "archive_crc_check": "passed",
+    "archive_selection": "All 803 PNG and JSON members under nerf_synthetic/lego/. Two Finder .DS_Store members omitted.",
+    "extracted_files": 803,
+    "extracted_bytes": 250888858,
+    "frame_counts": {"train": 100, "val": 100, "test": 200},
+    "referenced_color_images": {"count": 400, "mode": "RGBA", "width": 800, "height": 800},
+    "auxiliary_test_images": {"depth": 200, "normal": 200},
+    "camera_metadata_files": 3,
+    "horizontal_fov_radians_all_splits": 0.6911112070083618,
+    "checksums_relative_to_manifest": "SHA256SUMS",
+    "checksum_paths_relative_to": "data/raw/nerf_synthetic/lego",
+    "checksum_list_format": "UTF-8, sorted relative paths, lowercase SHA-256, two spaces, path, LF",
+    "checksum_list_sha256": "80268d4c533fa39ca30f03f7cf9c029847d1f99d4e1a32d7f276797057692114",
+    "checksum_origin": "Computed locally from the retrieved archive and extracted files",
+    "archive_member_byte_comparison": "803/803 matched"
+  },
+  "environment": {
+    "os": "macOS 27.2.1",
+    "arch": "arm64",
+    "hardware": "MacBook Air M2, 16 GB",
+    "python": "3.10.11",
+    "pillow": "12.0.0",
+    "numpy": "2.2.6",
+    "pytorch": "2.12.0",
+    "cuda_available": false
+  },
+  "handoff": {
+    "P00": "Scope documented in README.md",
+    "P01": "Project layout created",
+    "P02": "HTTPS transfer, ZIP extraction, JSON reading and PNG decoding exercised",
+    "P03": "Archive URL identified from the authors' download script and retrieved over HTTPS",
+    "P04": "HTTP 200, complete archive received and tested",
+    "P05": "Three splits verified, all 400 frames resolved, all 800 PNGs decoded",
+    "P06": "Dataset path, source, checksums and readiness recorded",
+    "acceptance_command_from_project_root": "python3 -B -m unittest discover -s tests -v",
+    "next_stage": "Block 1 dataset and camera inspection"
+  }
+}

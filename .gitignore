@@ -1,0 +1,14 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+/data/raw/
+/runs/**/input/
+/runs/**/model/
+/third_party/gaussian-splatting/
+*.pth
+*.ckpt

@@ -1,0 +1,14 @@
+[
+  {
+    "a": "val/r_5.png",
+    "b": "test/r_121.png",
+    "angle": 8.782019229592258,
+    "n": 78,
+    "near": 60,
+    "front": 60,
+    "median": 0.1993637236854322,
+    "control_pose": "train/r_95.png",
+    "ctrl": 0,
+    "ctrl_median": 92.80312070482303
+  }
+]
